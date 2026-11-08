@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#154ab5"><meta name="description" content="Английский шаг за шагом: 12 выражений для инструкций, объяснений и вопросов.">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="English">
+<title>English — шаг за шагом</title><link rel="icon" href="./icon-192.png" type="image/png"><link rel="apple-touch-icon" href="./icon-180.png"><link rel="manifest" href="./manifest.webmanifest" crossorigin="use-credentials"><link rel="stylesheet" href="./style.css">
+</head>
+<body data-theme="blue">
+<main id="app" aria-label="Английские выражения">
+<article id="card" aria-labelledby="phrase">
+<header class="card-header"><p id="group">Порядок действий</p><button id="menu" class="position" aria-label="Открыть 12 карточек и помощь"><span id="counter">01 / 12</span><span aria-hidden="true">≡</span></button></header>
+<section id="story" class="story">
+<h1 id="phrase" lang="en">The first thing you do is…</h1>
+<p id="meaning" class="meaning">Первое, что нужно сделать, — …</p>
+<div class="example"><p class="eyebrow">Например</p><p id="example" lang="en">The first thing you do is open the app.</p></div>
+<div class="audio-row"><button id="listen" class="audio-button" aria-label="Слушать выражение и пример. Голос Ryan"><span id="play-icon" aria-hidden="true"></span><span id="play-label">Слушать · Ryan</span></button><button id="restart" class="restart" aria-label="Слушать с начала" title="С начала" disabled>↺</button></div>
+<p id="audio-error" class="error" role="status" hidden></p>
+</section>
+<nav class="card-nav" aria-label="Перелистывание карточек"><button id="previous" class="arrow" aria-label="Предыдущая карточка" disabled>←</button><button id="offline-shortcut" class="offline-shortcut" aria-label="Сохранить карточки и Ryan для занятий без интернета">↓ Сохранить офлайн</button><button id="next" class="arrow" aria-label="Следующая карточка">→</button></nav>
+</article>
+</main>
+<p id="announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+<audio id="audio" preload="none"></audio>
+<dialog id="overview" aria-labelledby="dialog-title">
+<div class="dialog-head"><h2 id="dialog-title">Шаг за шагом</h2><button id="close" class="close" aria-label="Закрыть">×</button></div>
+<div class="section-tabs" role="tablist" aria-label="Разделы"><button id="tab-contents" role="tab" aria-selected="true" aria-controls="contents">Карточки</button><button id="tab-help" role="tab" aria-selected="false" aria-controls="help" tabindex="-1">Как учиться</button><button id="tab-install" role="tab" aria-selected="false" aria-controls="install" tabindex="-1">На iPhone</button></div>
+<section id="contents" role="tabpanel" aria-labelledby="tab-contents"><div id="card-list"></div></section>
+<section id="help" role="tabpanel" aria-labelledby="tab-help" hidden>
+<p class="intro">Объясните. Покажите. Уточните.</p>
+<p>Прочитайте выражение и пример. Нажмите «Слушать», повторите за Ryan, затем придумайте свою инструкцию. Можно заниматься по шесть выражений за раз.</p>
+<h3>На этой карточке</h3><p id="note"></p>
+<h3>Как листать</h3><p>Смахните влево или вправо либо нажмите стрелку. На клавиатуре работают ←, →, Home и End. Номер вверху открывает список. Позиция сохраняется в этом браузере.</p>
+<h3>Об этой подборке</h3><p>12 выражений из присланного фрагмента Englex «Functional language: giving instructions». Русские пояснения и новые примеры подготовлены для этой подборки. Это не полный курс.</p>
+<p class="hint">Учебная синтезированная озвучка: Microsoft Ryan, британский английский. По нажатию звучат выражение и пример. Повторное нажатие ставит запись на паузу; ↺ начинает её заново. При смене карточки звук останавливается.</p>
+</section>
+<section id="install" role="tabpanel" aria-labelledby="tab-install" hidden>
+<p class="intro">Даже без интернета.</p><p id="offline-status" role="status">Проверяем возможность сохранения…</p><button id="save-offline" class="save-offline" disabled>Сохранить весь набор</button><button id="reload-offline" class="save-offline" hidden>Открыть обновление</button><h3>На экран Домой</h3><ol><li>Откройте эту страницу в Safari.</li><li>Откройте сайт именно в Safari. Нажмите «Поделиться» (при необходимости сначала откройте меню страницы). Если пункта «На экран Домой» нет, внизу списка выберите «Изменить действия» и добавьте его.</li><li>Выберите «На экран Домой», включите «Открывать как веб-приложение», если этот переключатель есть, и нажмите «Добавить».</li></ol><p>Сначала откройте приложение с интернетом и нажмите «Сохранить весь набор». Дождитесь подтверждения. После добавления на экран Домой откройте его с иконки и ещё раз проверьте сохранение: Safari и установленное приложение могут хранить данные отдельно.</p><p class="hint">Офлайн-набор хранится только на этом устройстве. iOS может удалить данные при нехватке места; очистка данных сайта также удалит набор. После длительного перерыва проверьте готовность с интернетом. Первое открытие и сохранение набора требуют подключения.</p><p class="hint">Safari на iPhone не поддерживает веб-вибрацию. Мягкое движение карточек работает без неё. При включённом уменьшении движения анимации отключаются.</p>
+</section>
+</dialog>
+<noscript><p class="noscript">Для перелистывания карточек и звука включите JavaScript в браузере.</p></noscript>
+<script type="module" src="./app.js"></script><script type="module" src="./offline.js"></script>
+</body></html>
